@@ -1,4 +1,4 @@
-package edu.uoc.epcsd.productcatalog;
+package edu.uoc.epcsd.productcatalog.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
