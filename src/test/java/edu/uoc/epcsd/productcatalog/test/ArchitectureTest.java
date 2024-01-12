@@ -7,7 +7,7 @@ import com.tngtech.archunit.junit.ArchTest;
 import org.springframework.stereotype.Service;
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;
 import static com.tngtech.archunit.library.Architectures.onionArchitecture;
-import org.junit.runner.RunWith;
+
 
 
 @AnalyzeClasses(packages = "edu.uoc.epcsd.productcatalog", importOptions = { ImportOption.DoNotIncludeTests.class,
