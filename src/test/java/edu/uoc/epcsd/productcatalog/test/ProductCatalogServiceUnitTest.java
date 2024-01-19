@@ -16,16 +16,20 @@ import java.util.Optional;
 
 import static org.mockito.Mockito.*;
 import static org.assertj.core.api.Assertions.*;
+//Purpose of  @ExtendWith is to tell JUnit to enable the Mockito extension.
 @ExtendWith(MockitoExtension.class)
 public class ProductCatalogServiceUnitTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductCatalogServiceUnitTest.class);
+    //Purpose of @Mock is to tell Mockito to create a mock object for the ProductRepository class.
     @Mock
     private ProductRepository productRepository;
+    //Purpose of @InjectMocks is to tell Mockito to inject the mocks marked with @Mock to this instance when it is created.
     @InjectMocks
     private ProductServiceImpl productService;
     private final Long validId = 1L;
     private final Long invalidId = -1L;
     private Product mockProduct;
+    //Purpose of @BeforeEach is to tell JUnit to execute this method before each test.
     @BeforeEach
     public void setUp() {
         mockProduct = new Product();
